@@ -1,5 +1,5 @@
 # wordcloud-webui
-The web UI for wordcloud (text to word cloud picture converter)
+The web UI for word_cloud (text to word cloud picture converter)
 
 ## 描述(Description)
 
