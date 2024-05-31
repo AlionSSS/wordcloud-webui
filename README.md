@@ -6,7 +6,7 @@ The web UI for wordcloud (text to word cloud picture converter)
 - 功能：利用 [word_cloud](https://github.com/amueller/word_cloud) 将 **普通文本** 转为 **词云图像** 文件
 - 可视化：使用 [Gradio](https://github.com/gradio-app/gradio) 将该功能可视化
 
-## 界面
+## 界面(UI)
 ![image.png](doc-resources%2Fimage.png)
 
 ## 安装(Install)
