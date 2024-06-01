@@ -127,8 +127,8 @@ with gr.Blocks(title="词云转换器", js=js) as iface:
                 gr.Label(label="Tips", value="使用该模式时，记得清理掉“Mask模式”下的“Mask图像”", color="#fee2e2")
             with gr.Tab("Mask模式"):
                 with gr.Row():
-                    input_contour_width = gr.Number(value=3, label="轮廓线的粗细", minimum=0)
-                    input_contour_color = gr.Textbox(value="steelblue", label="轮廓线的颜色")
+                    input_contour_width = gr.Number(value=3, label="轮廓线的粗细", info="最小为 0", minimum=0)
+                    input_contour_color = gr.Textbox(value="steelblue", label="轮廓线的颜色", info="默认为'steelblue'，也可用'#fee2e2'这种格式")
                 with gr.Row():
                     input_mask_image = gr.Image(label="Mask图像（决定词云的形状、颜色、宽高）")
                     input_mask_color = gr.Image(label="若传入该图，则词云的颜色由该图决定")
@@ -139,7 +139,7 @@ with gr.Blocks(title="词云转换器", js=js) as iface:
             with gr.Group():
                 with gr.Row():
                     with gr.Group():
-                        input_bg_color = gr.Textbox(value="white", label="词云图的背景色（默认为'white'）")
+                        input_bg_color = gr.Textbox(value="white", label="词云图的背景色", info="默认为'white'，也可用'#fee2e2'这种格式")
                         input_margin = gr.Number(value=2, label="字体间隔（默认为'2'）", minimum=0)
                         with gr.Row():
                             input_min_font_size = gr.Number(value=4, label="字体大小-最小值", minimum=1)
