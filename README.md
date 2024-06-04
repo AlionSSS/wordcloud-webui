@@ -1,12 +1,13 @@
 # wordcloud-webui
 The web UI for word_cloud (text to word cloud picture converter)
 
-![image.png](doc-resources%2Fimage.png)
-
 ## 描述(Description)
 
 - 功能：利用 [word_cloud](https://github.com/amueller/word_cloud) 将 **普通文本** 转为 **词云图像** 文件
 - 可视化：使用 [Gradio](https://github.com/gradio-app/gradio) 将该功能可视化
+
+## 界面(UI)
+![image.png](doc-resources%2Fimage.png)
 
 ## 安装(Install)
 - 新建一个虚拟环境(Python 3.9.16)，或使用已有的Python环境
