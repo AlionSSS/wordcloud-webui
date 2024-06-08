@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordcloud-webui"
+version = "0.1.0"
+description = "The web UI for word_cloud (text to word cloud picture converter)"
+authors = [
+  { name = "Lion A", email = "alionsss@foxmail.com" }
+]
+license = { text = "License :: OSI Approved :: Apache Software License" }
+# PyPI 上搜索时的关键词
+keywords = ["word-cloud", "ui", "webui", "graph", "picture", "converter", "text"]
+# 程序分类信息，详见 https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Multimedia :: Graphics",
+]
+requires-python = ">=3.6"
+dependencies = ["gradio==4.29", "wordcloud==1.9.3", "jieba==0.42.1"]
+readme = "README.md"
+
+# 项目相关连接，例如主页、文档、Git仓库等
+[project.urls]
+Homepage = "https://github.com/AlionSSS/wordcloud-webui"
+Repository = "https://github.com/AlionSSS/wordcloud-webui.git"
+
+[project.scripts]
+wordcloud-gui = "wordcloud_webui.main:start_service"
+
+[tool.setuptools.package-data]
+dcm2niix_webui = ["resources/*"]
