@@ -20,7 +20,7 @@ The web UI for word_cloud (text to word cloud picture converter)
   - 点击[本项目GitHub页面](https://github.com/AlionSSS/wordcloud-webui)右上角的绿色的按钮`Code`，再点击`Download ZIP`
 
 ## 启动服务(Start Service)
-- 进入到本项目的目录下
+- 进入到本项目的目录下，执行 `$ cd src/dcm2niix_webui`
 - 二选一
   - 在本地电脑端启动，直接执行 `$ python main.py`
   - 在服务器端启动，执行 `$ nohup python main.py 1>server_run.log 2>&1 &`
