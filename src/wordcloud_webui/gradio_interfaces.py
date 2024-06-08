@@ -1,8 +1,8 @@
 import gradio as gr
 
-from util import lib_wordcloud, lib_jieba
+from .util import lib_wordcloud, lib_jieba
 
-from consts import *
+from .consts import *
 
 
 def service_text2wc(
@@ -128,18 +128,21 @@ with gr.Blocks(title="词云转换器", js=js) as iface:
             with gr.Tab("Mask模式"):
                 with gr.Row():
                     input_contour_width = gr.Number(value=3, label="轮廓线的粗细", info="最小为 0", minimum=0)
-                    input_contour_color = gr.Textbox(value="steelblue", label="轮廓线的颜色", info="默认为'steelblue'，也可用'#fee2e2'这种格式")
+                    input_contour_color = gr.Textbox(value="steelblue", label="轮廓线的颜色",
+                                                     info="默认为'steelblue'，也可用'#fee2e2'这种格式")
                 with gr.Row():
                     input_mask_image = gr.Image(label="Mask图像（决定词云的形状、颜色、宽高）")
                     input_mask_color = gr.Image(label="若传入该图，则词云的颜色由该图决定")
                 # gr.Image(value=EXAMPLE_MASK_IMAGE_PATH, label="Mask图像的样例", interactive=False)
-                gr.Gallery(value=[EXAMPLE_MASK_IMAGE_01, EXAMPLE_MASK_IMAGE_02, EXAMPLE_MASK_IMAGE_03, EXAMPLE_MASK_IMAGE_04],
-                           label="Mask图像的样例", interactive=False)
+                gr.Gallery(
+                    value=[EXAMPLE_MASK_IMAGE_01, EXAMPLE_MASK_IMAGE_02, EXAMPLE_MASK_IMAGE_03, EXAMPLE_MASK_IMAGE_04],
+                    label="Mask图像的样例", interactive=False)
         with gr.Column():
             with gr.Group():
                 with gr.Row():
                     with gr.Group():
-                        input_bg_color = gr.Textbox(value="white", label="词云图的背景色", info="默认为'white'，也可用'#fee2e2'这种格式")
+                        input_bg_color = gr.Textbox(value="white", label="词云图的背景色",
+                                                    info="默认为'white'，也可用'#fee2e2'这种格式")
                         input_margin = gr.Number(value=2, label="字体间隔（默认为'2'）", minimum=0)
                         with gr.Row():
                             input_min_font_size = gr.Number(value=4, label="字体大小-最小值", minimum=1)

@@ -1,4 +1,4 @@
-from gradio_interfaces import iface
+from .gradio_interfaces import iface
 
 
 def start_service():

@@ -2,7 +2,7 @@ from wordcloud import WordCloud, ImageColorGenerator
 import numpy as np
 from PIL import Image
 
-from consts import *
+from ..consts import *
 
 
 def text2wordcount_normal(

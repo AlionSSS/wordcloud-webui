@@ -1,7 +1,8 @@
 import jieba
 # jieba.enable_parallel(4)
 
-from consts import *
+from ..consts import *
+
 
 # The function for processing text with Jieba
 def jieba_processing_txt(text, userdict_list=['阿Ｑ', '孔乙己', '单四嫂子']):
