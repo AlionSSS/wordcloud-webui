@@ -37,4 +37,4 @@ Repository = "https://github.com/AlionSSS/wordcloud-webui.git"
 wordcloud-gui = "wordcloud_webui.main:start_service"
 
 [tool.setuptools.package-data]
-dcm2niix_webui = ["resources/*"]
+wordcloud_webui = ["resources/*/*"]
