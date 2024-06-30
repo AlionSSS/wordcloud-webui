@@ -20,7 +20,7 @@ The web UI for word_cloud (text to word cloud picture converter)
   - 解压项目，进入到项目根目录
     - 安装，执行 `$ pip install -e ./ -i "https://pypi.doubanio.com/simple/"`
 - 注
-  - 卸载命令 `$ pip uninstall wordcloud-webui"`
+  - 卸载命令 `$ pip uninstall wordcloud-webui`
 
 ## 启动服务(Start Service)
 ### 直接启动
